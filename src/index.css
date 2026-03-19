@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-haiwei-blue: #003366;
+  --color-haiwei-green: #66CC99;
+  --color-haiwei-orange: #FF6600;
+  --color-haiwei-bg: #F0F4F8;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-haiwei-bg text-slate-900 antialiased;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.industrial-card {
+  @apply bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300;
+}
